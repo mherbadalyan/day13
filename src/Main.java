@@ -14,24 +14,24 @@ public class Main {
                 {2, 5, 4},
         };
 
-//        System.out.println("Print matrix size.");
-//        printTask1(scanner.nextInt());
-//
-//        System.out.println("Print matrix size.");
-//        printTask2(scanner.nextInt());
-//
-//        System.out.println(printIsMatrixSimmetric(matrix));
-//
-//        printTask4WinnerInfo(matrix);
-//
-//        printTask5WinnerInfo(matrix);
-//
-//        printTask6WinnerInfo(matrix);
-//
-//        merge2MatrixAndPrint(matrix,matrix2);
-//
-//        System.out.println("Enter matrix size");
-//        printSpiral1(scanner.nextInt());
+        System.out.println("Print matrix size.");
+        printTask1(scanner.nextInt());
+
+        System.out.println("Print matrix size.");
+        printTask2(scanner.nextInt());
+
+        System.out.println(printIsMatrixSimmetric(matrix));
+
+        printTask4WinnerInfo(matrix);
+
+        printTask5WinnerInfo(matrix);
+
+        printTask6WinnerInfo(matrix);
+
+        merge2MatrixAndPrint(matrix,matrix2);
+
+        System.out.println("Enter matrix size");
+        printSpiral1(scanner.nextInt());
 
         System.out.println("Enter matrix size");
         printSpiral2(scanner.nextInt());
