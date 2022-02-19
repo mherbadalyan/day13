@@ -6,7 +6,7 @@ public class Main {
         int matrix[][] = {
                 {0, 1, 2},
                 {1, 5, 3},
-                {2, 5, 4},
+                {2, 3, 4},
         };
         int matrix2[][] = {
                 {0, 1, 2},
@@ -14,27 +14,27 @@ public class Main {
                 {2, 5, 4},
         };
 
-        System.out.println("Print matrix size.");
-        printTask1(scanner.nextInt());
-
-        System.out.println("Print matrix size.");
-        printTask2(scanner.nextInt());
-
-        System.out.println(printIsMatrixSimmetric(matrix));
-
-        printTask4WinnerInfo(matrix);
-
-        printTask5WinnerInfo(matrix);
-
-        printTask6WinnerInfo(matrix);
-
+//        System.out.println("Print matrix size.");
+//        printTask1(scanner.nextInt());
+//
+//        System.out.println("Print matrix size.");
+//        printTask2(scanner.nextInt());
+//
+//        System.out.println(printIsMatrixSimmetric(matrix));
+//
+//        printTask4WinnerInfo(matrix);
+//
+//        printTask5WinnerInfo(matrix);
+//
+//        printTask6WinnerInfo(matrix);
+//
         merge2MatrixAndPrint(matrix,matrix2);
-
-        System.out.println("Enter matrix size");
-        printSpiral1(scanner.nextInt());
-
-        System.out.println("Enter matrix size");
-        printSpiral2(scanner.nextInt());
+//
+//        System.out.println("Enter matrix size");
+//        printSpiral1(scanner.nextInt());
+//
+//        System.out.println("Enter matrix size");
+//        printSpiral2(scanner.nextInt());
     }
 
 
@@ -108,9 +108,9 @@ public class Main {
         int count = 0;
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                if (matrix[i][j] == matrix[j][i]) {
-                    count++;
-                }
+                if (matrix[i][j] != matrix[j][i]) {
+                    return false;
+                }else count++;
             }
         }
         return (count == matrix.length * matrix.length);
